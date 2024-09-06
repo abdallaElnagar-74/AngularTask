@@ -1,0 +1,34 @@
+<div class="cardd py-3 rounded-4">
+    <i class="fa-regular fa-trash-can me-5 fa-xl ms-5 cursor-pointer" title="حذف"></i>
+    <p class="card-title text-center fs-5 fw-semibold">عرض التذكرة الخاصة بالفيلم</p>
+    <div class="position-relative w-50 d-block mx-auto mt-4 copy-input">
+        <input #value disabled class="card-input text-center bg-white py-2 px-3 text-black w-100 rounded-3 form-control" [value]="link">
+        <button class="btn position-absolute copy  top-50 translate-middle-y d-flex align-items-center text-center align-middle" 
+         [cdkCopyToClipboard]="value.value" (click)="onCopy()"><i title="نسخ"  class="fa-regular fa-copy ms-2 cursor-pointer"></i></button>
+    </div>
+    <p class="text-center mt-3 fs-6">فعال حتي 15 يوليو 2023</p>
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="first-circle bg-black rounded-end-circle">
+
+        </div>
+        <div  class="border-1  dashed-line">
+
+        </div>
+        <div class="second-circle bg-black rounded-start-circle">
+        </div>
+    </div>
+    <div class="container-fluid mt-4 d-flex justify-content-between align-items-center">
+        <div class="rounded-3">
+            <qrcode [qrdata]="value.value" [margin]="2">
+'
+            </qrcode>
+        </div>
+        <div class="offer text-end">
+            <p class="m-0">خصم</p>
+           <div class="mt-1">
+            <button class="btn share-btn rounded-1 px-2 me-3">مشاركة <i class="fa-regular fa-paper-plane"></i></button>
+            <span>25%</span>
+           </div>
+        </div>
+    </div>
+</div>

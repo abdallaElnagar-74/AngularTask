@@ -1,0 +1,83 @@
+.cardd{
+    background-image: url('../../assets/Vector.png');
+    background-color: #8a74f9;
+    color: white;
+    .copy{
+        inset-inline-start: .625rem;
+        color: #8A74F9;
+    }
+    .card-input{
+        border-style: none;
+        &:focus{
+           border-color: white;
+           border-style: none;
+           border: 0px;
+           box-shadow: none;
+        }
+    }
+    .first-circle{
+        margin-inline-start: -0.75rem;
+    background-color: rgb(243, 245, 247) !important;
+    width: 1.5625rem; 
+    height: 1.5625rem
+    }
+    .second-circle{
+        margin-inline-end: -.75rem;
+    background-color: rgb(243, 245, 247) !important;
+    width: 1.5625rem;
+     height: 1.5625rem
+    }
+    .dashed-line{
+        background-color: #8A74F9;
+        height: .125rem;
+         width: 100%;
+         border: dashed #FFFFFF66;
+        
+    }
+}
+.share-btn{
+    color: white;
+    border-color: white;
+    transition: all .7s;
+    border-width: .125rem;
+    &:hover{
+        color: #8A74F9;
+        background-color: white;
+        border-color: transparent;
+        border-radius:.125rem;
+    }
+}
+::ng-deep .qrcode{
+    canvas{
+        border-radius: .5rem !important;
+    }
+}
+.fa-trash-can{
+    transition: all .2s;
+    &:hover{
+        color: rgb(220,53,69);
+        animation: rotate .8s infinite ;
+    }
+}
+@keyframes rotate {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(25deg);}
+    100% {transform: rotate(-25deg);}
+}
+
+@media screen  and (max-width : 600px) and (min-width:360px) {
+    .copy-input{
+        width: 75% !important;
+    }
+    .copy{
+        inset-inline-start: -0.375rem !important;
+    }
+}
+@media screen  and (min-width :600px) and (max-width:1144px) {
+    .copy-input{
+        width: 75% !important;
+    }
+    .copy{
+        inset-inline-start: -0.375rem !important;
+    }
+}

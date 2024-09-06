@@ -1,0 +1,135 @@
+
+
+th{
+    color: #ABAAB1;
+    font-weight: 400;
+}
+ ::ng-deep .ngx-pagination .current {
+    background: #8A74F9 !important;
+    border-radius: .2rem;
+    color: white;
+  }
+  .tzakt-title{
+    font-weight: 500;
+    color: #1C1C28;
+  }
+.fa-sliders,.pi-sort-alt,.pi-search{
+  color: #8B8B8B;
+}
+.pi-search{
+  inset-inline-start: 1%;
+}
+.check{
+  width: 4.5rem;
+  height: 2rem;
+  background-color: #8A74F9;
+  position: relative;
+  cursor: pointer;
+  padding-block-start: .125rem;
+  padding-block-end: 2.125rem;
+  &::before{
+    content: '';
+    background-color: #ffff;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    border-radius: 100vh;
+    transform: translateX(-10%);
+    transition: all .2s;
+  }
+}
+.check{
+  width: 4.5rem;
+  height: 2rem;
+  background-color: #8A74F9;
+  position: relative;
+  cursor: pointer;
+  padding-block-start: .125rem;
+  padding-block-end: 2.125rem;
+  &::before{
+    content: '';
+    background-color: #ffff;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    border-radius: 100vh;
+    transform: translateX(-10%);
+    transition: all .2s;
+  }
+}
+.button{
+  &:checked + .check{
+    background-color: #d2d2d2;
+  }
+  &:checked + .check::before{
+    transform: translateX(-37px);
+  }
+}
+
+.book-btn{
+  background-color: #8A74F9;
+  color: white;
+  border-color: transparent;
+  border-width: .125rem;
+  transition: all .7s;
+  &:hover{
+    border-color: #8A74F9;
+    border-width: .125rem;
+    background-color: transparent;
+    color: #8A74F9;
+  }
+}
+.foto{
+  height: 29.88px;
+  width:  29.88px;
+}
+.name{
+  font-weight: 400;
+  color: rgba(28, 28, 40, 1);
+}
+.number{
+  color: rgba(146, 161, 173, 1);
+  font-weight: 400;
+  font-size: .8125rem;
+}
+.fa-ticket,.pi-download{
+  color: rgba(138, 116, 249, 1);
+  transition: all .3s;
+}
+.ticket{
+  background-color: rgba(138, 116, 249, 0.1);
+}
+.download-btn{
+  background-color:transparent ;
+  border:  #8A74F9 solid;
+  transition: all .3s;
+  &:hover{
+    background-color:#8A74F9 ;
+    border:  transparent solid;
+    
+  }
+  &:hover .pi-download{
+    color: white;
+  }
+}
+@media screen and (max-width:600px) {
+ .search-section{
+  align-items: center !important;
+  margin-bottom: .625rem !important;
+  .iconz{
+    padding-block: .4375rem;
+  }
+  .tzakt-title{
+    font-size: .8125rem !important;
+    font-weight: 600 !important;
+  }
+}
+
+}
+#search{
+  border: .0625rem !important;
+  &:focus{
+    border-style: none;
+    outline: none;
+  }
+}
